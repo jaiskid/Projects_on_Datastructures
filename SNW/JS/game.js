@@ -19,10 +19,10 @@ function preload(){
     console.log("Preload");
     
     //load object ,load some images
-    this.load.image('background','../Images/back.jpg');
-    this.load.image('Wheel','../Images/wheel.png');
-    this.load.image('pin','../Images/pin.png');
-    this.load.image('stand','../Images/stand.png');
+    this.load.image('background','./Images/back.jpg');
+    this.load.image('Wheel','./Images/wheel.png');
+    this.load.image('pin','./Images/pin.png');
+    this.load.image('stand','./Images/stand.png');
     console.log(this);
 
 }
@@ -82,6 +82,7 @@ function spinwheel(){
         callbackScope:this,
         onComplete :function(){
             this.game_text.setText("You won 😎\n" + prizes_config.prize_name[idx]);
+            
         }
     });
 }
