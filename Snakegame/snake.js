@@ -1,3 +1,4 @@
+//This project based upon oops
 function init(){
     canvas = document.getElementById('mycanvas');
 	W = H = canvas.width = canvas.height = 1000;
